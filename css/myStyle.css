@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div#main {
+	width: 50%;
+	margin-top:30px;
+  margin-left: 430px; 
+	padding: 20px 0;
+	position: relative;
+}
+ 
+ div#main p.nowPlay{
+     margin-top: 10px;
+     box-sizing: border-box;
+     padding-left: 25px;
+     text-transform: uppercase;
+ }
+body{
+  position: relative;
+}
+
+a{
+   text-decoration:none;	
+   display:block;
+}
+#player{
+  height: 30px;
+	position: relative;
+	border:1px solid silver;
+	border-radius: 5px;
+	margin: 20px 0 0 0;
+}
+#player div{
+  display: inline-block;
+}
+
+#player img{
+  cursor: pointer;
+	height: 30px;
+  width: 30px;
+  position: absolute;
+  left:15px;
+  top:0;
+}
+#player div.time{
+  position: absolute;
+  top:0;
+  height: 30px;
+  left:70px;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+
+
+#player div.volume{
+  position: absolute;
+  height: 30px;
+  left:540px;
+   top:0px;
+   box-sizing: border-box;
+   padding-top: 5px;
+}
+
+#rangeP {  /* контейнер */
+  position: absolute;
+  top:10px;
+  -webkit-appearance: none;
+          appearance: none;
+  padding: 0;
+  border: 1px solid black;
+  background: black linear-gradient(white, white);
+  overflow: hidden;
+  outline: none;
+  height: 10px;
+  width: 110px;
+}
+#rangeP::-moz-range-thumb {  /* ползунок в Firefox */
+  border-radius: 2px;
+  box-shadow: -13px 0 black, -26px 0 black, -39px 0 black, -52px 0 black, -65px 0 black, -78px 0 black, -91px 0 black, -104px 0 black, -117px 0 black, -130px 0 black, -143px 0 black, -156px 0 black;
+
+}
+#rangeP::-moz-range-track {  /* линия, по которой он ездит в Firefox */
+  background: none;
+  border: none;
+}
+#rangeP::-webkit-slider-thumb {  /* ползунок в Хроме */
+  -webkit-appearance: none;
+  width:15px;
+  height:15px;
+  border: 1px solid #818181;
+  border-radius: 2px;
+  background-image: linear-gradient(#dedede, #f2f2f2);
+  box-shadow: -13px 0 black, -26px 0 black, -39px 0 black, -52px 0 black, -65px 0 black, -78px 0 black, -91px 0 black, -104px 0 black, -117px 0 black, -130px 0 black, -143px 0 black, -156px 0 black;
+}
+
+#progressTime {  /* контейнер */
+  position: absolute;
+  top:10px;
+  -webkit-appearance: none;
+          appearance: none;
+  padding: 0;
+  border: 1px solid black;
+  background: black linear-gradient(white, white);
+  overflow: hidden;
+  outline: none;
+  height: 10px;
+  width: 340px;
+  left:170px;
+}
+#progressTime::-moz-range-thumb {  /* ползунок в Firefox */
+  border-radius: 2px;
+  box-shadow: -13px 0 black,
+   -26px 0 black,
+    -39px 0 black,
+     -52px 0 black,
+      -65px 0 black,
+       -78px 0 black,
+        -91px 0 black,
+         -104px 0 black,
+          -117px 0 black,
+           -130px 0 black,
+            -143px 0 black,
+             -156px 0 black,
+              -169px 0 black,
+               -182px 0 black,
+               -195px 0 black,
+               -208px 0 black,
+               -222px 0 black,
+               -235px 0 black,
+               -248px 0 black,
+               -261px 0 black,
+               -274px 0 black,
+               -287px 0 black,
+               -300px 0 black,
+               -313px 0 black,
+               -326px 0 black;
+}
+#progressTime::-moz-range-track {  /* линия, по которой он ездит в Firefox */
+  background: none;
+  border: none;
+}
+#progressTime::-webkit-slider-thumb {  /* ползунок в Хроме */
+  -webkit-appearance: none;
+  width:15px;
+  height:15px;
+  border: 1px solid #818181;
+  border-radius: 2px;
+  background-image: linear-gradient(#dedede, #f2f2f2);
+  box-shadow: -13px 0 black, -26px 0 black, -39px 0 black, -52px 0 black, -65px 0 black, -78px 0 black, -91px 0 black, -104px 0 black, -117px 0 black, -130px 0 black, -143px 0 black, -156px 0 black;
+}
+
+#player .play img:last-child{
+  display: none;
+}
+
+#list a{
+   color:black;
+   padding: 20px 10px;
+   border-bottom:1px solid silver;
+   text-transform: uppercase;
+   position: relative;
+   padding-left: 30px;
+   box-sizing: border-box; 
+}
+#list a img{
+  position: absolute;
+  left:5px;
+  top:20px;
+}
+#list a:hover{
+   background-color:black;
+   color: white;
+   opacity: 0.4;
+}
+
+
+  #eq-wrap{
+margin: 0 0 50px 0;
+  }
+
+  #eq-wrap input{
+  transform: rotate(-90deg);
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  margin: 70px -70px 0 0;
+  background-color: black;
+  }

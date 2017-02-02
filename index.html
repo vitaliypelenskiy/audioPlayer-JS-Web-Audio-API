@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>audioPlayer</title>
+     <link rel="stylesheet" href="css/myStyle.css">
+     <script src="js/myjs.js"></script>
+</head>
+<body>
+<div id="main">
+        <p class="nowPlay"></p>
+	      <div id="player">
+	      	  <div class="play">
+	      	  	<img id="playSound" src="images/play-button (2).png" alt="">
+	      	  	<img class="pauseSound" src="images/pause (1).png" alt="">
+	      	  </div>
+	      	  <div class="time">
+	      	     <span class="timeNow">00:00</span>/<span class="timeAll">00:00</span>
+	      	  </div>
+	      	  <div class="progress">
+	      	  	    <input id="progressTime" type="range" min="0" max="0" step="1" value="0" >
+	      	  </div>
+	      	  <div class="volume">
+	      	  	  <input id="rangeP" type="range" min="0" max="1" step="0.2" value="0.5" data-control="gain">
+	      	  </div>
+	      </div>
+	    <div id="eq-wrap">
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      	<input class="eqInp" type="range" min="-16" max="16" step="0.1" value="0" >
+	      </div>
+	      <div id="list">
+	      	    
+	      	 	<a href="data/first.mp3"><img src="images/play-button.png" alt="">matthew koma - kisses back </a>
+	      	 	<a href="data/too.mp3"><img src="images/play-button.png" alt="">michael jackson - give in to me</a>
+	      	 	<a href="data/three.mp3"><img src="images/play-button.png" alt="">leon - sleep deprived</a>
+	      	 	<a href="data/four.mp3"><img src="images/play-button.png" alt="">one republic - if i lose myself</a>
+	      	 	<a href="data/five.mp3"><img src="images/play-button.png" alt="">rihana - hard feat young jeezy</a>
+	      	 
+	      </div>
+	      </div>
+	        
+</body>
+</html>
